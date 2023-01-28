@@ -1,0 +1,23 @@
+
+{
+  "user": {
+    "id": "1",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "password": "123456",
+    "bot_history": {
+      "lawyer_bot": {
+        "conversations": [],
+        "chat_page": {}
+      },
+      "idea_bot": {
+        "conversations": [],
+        "chat_page": {}
+      },
+      "work_bot": {
+        "conversations": [],
+        "chat_page": {}
+      }
+    }
+  }
+}
