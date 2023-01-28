@@ -1,0 +1,24 @@
+
+{
+  "name": "AI Evolve",
+  "short_name": "AI Evolve",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "description": "AI Evolve is a conversational AI platform that uses OpenAI GPT-3 to provide users with a unique conversational experience. With AI Evolve, users can sign up, log in, and consult with three bots: lawyer bot, idea bot, and work bot. Each bot has its own chat page and conversation history, so users can get the answers they need quickly and easily.",
+  "icons": [
+    {
+      "src": "/assets/images/icon-192.jpg",
+      "type": "image/jpg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/icon-512.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
