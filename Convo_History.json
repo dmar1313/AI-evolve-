@@ -1,0 +1,32 @@
+
+{
+  "userID": {
+    "LawyerBot": {
+      "convoHistory": [
+        {
+          "timestamp": "dateTime",
+          "userInput": "string",
+          "botOutput": "string"
+        }
+      ]
+    },
+    "IdeaBot": {
+      "convoHistory": [
+        {
+          "timestamp": "dateTime",
+          "userInput": "string",
+          "botOutput": "string"
+        }
+      ]
+    },
+    "WorkBot": {
+      "convoHistory": [
+        {
+          "timestamp": "dateTime",
+          "userInput": "string",
+          "botOutput": "string"
+        }
+      ]
+    }
+  }
+}
