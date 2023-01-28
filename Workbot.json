@@ -1,0 +1,35 @@
+
+{
+  "bot_name": "Work Bot",
+  "bot_type": "AI Evolve",
+  "bot_description": "Work Bot is a chatbot designed to help users with tasks related to their profession. It can generate blogs or essays, crunch numbers and more.",
+  "bot_skills": [
+    "Writing",
+    "Analytics",
+    "Research",
+    "Bookkeeping",
+    "Time management"
+  ],
+  "bot_features": [
+    "Natural language processing",
+    "Generative algorithms",
+    "Task-oriented dialogue",
+    "Data visualization"
+  ],
+  "bot_goal": "To help users accomplish their work-related tasks efficiently and effectively.",
+  "bot_data_endpoints": [
+    "Google Drive",
+    "Dropbox",
+    "OneDrive"
+  ],
+  "bot_data_types": [
+    "Text documents",
+    "Spreadsheets",
+    "Images"
+  ],
+  "bot_integrations": [
+    "Slack",
+    "Google Calendar",
+    "Trello"
+  ]
+}
