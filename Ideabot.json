@@ -1,0 +1,61 @@
+
+{
+    "name": "Idea Bot",
+    "description": "A chatbot designed to provide creative ideas and solutions to any problem.",
+    "intents": [
+        {
+            "name": "Generate Ideas",
+            "samples": [
+                "I need an idea for a new project",
+                "I'm stuck on a problem and need help",
+                "I need a creative solution"
+            ],
+            "actions": [
+                {
+                    "type": "openai",
+                    "api_call": "gpt3",
+                    "params": {
+                        "prompt": "What kind of idea would you like to generate?",
+                        "max_tokens": 1000
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Trending Topics",
+            "samples": [
+                "What are some current trends in my industry?",
+                "What topics are popular right now?",
+                "What topics should I focus on?"
+            ],
+            "actions": [
+                {
+                    "type": "openai",
+                    "api_call": "gpt3",
+                    "params": {
+                        "prompt": "What kind of topics would you like to explore?",
+                        "max_tokens": 1000
+                    }
+                }
+            ]
+        },
+        {
+            "name": "General Knowledge",
+            "samples": [
+                "What do I need to know?",
+                "What should I be aware of?",
+                "What should I learn?"
+            ],
+            "actions": [
+                {
+                    "type": "openai",
+                    "api_call": "gpt3",
+                    "params": {
+                        "prompt": "What kind of knowledge would you like to explore?",
+                        "max_tokens": 1000
+                    }
+                }
+            ]
+        }
+    ]
+}
