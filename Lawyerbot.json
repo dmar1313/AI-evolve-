@@ -1,0 +1,18 @@
+
+{
+    "conversation": {
+        "greeting": "Hi there, I'm Lawyerbot. How can I help you with a legal issue today?",
+        "ask_area": "What area of law are you looking for assistance with?",
+        "area_responses": {
+            "divorce": "I can provide advice and assistance on divorce-related matters. What can I help you with?",
+            "injury": "I can provide advice and assistance on injury-related matters. What can I help you with?",
+            "employment": "I can provide advice and assistance on employment-related matters. What can I help you with?",
+            "criminal": "I can provide advice and assistance on criminal-related matters. What can I help you with?",
+            "other": "I can provide advice and assistance on other legal matters. What can I help you with?"
+        },
+        "ask_details": "Can you provide me with some more details on the issue?",
+        "provide_details": "Thank you. Please provide me with any additional information that may be relevant to your case.",
+        "ask_for_advice": "Based on the information you have provided, here is my advice: [ADVICE] Do you have any further questions?",
+        "closing": "Thank you for using Lawyerbot. I hope I was able to help you."
+    }
+}
