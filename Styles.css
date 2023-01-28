@@ -1,0 +1,66 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    font-size: 16px;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'High-Tech';
+}
+
+/* Login/Signup Page Styles */
+#login-signup-page {
+    background-image: url("ai-evolve-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Chat Page Styles */
+#chat-page {
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+    font-family: 'High-Tech';
+}
+
+/* Bot Styles */
+#lawyer-bot {
+    background-color: #FFC838;
+    padding: 10px;
+    color: #fff;
+    font-family: 'High-Tech';
+}
+
+#idea-bot {
+    background-color: #0099FF;
+    padding: 10px;
+    color: #fff;
+    font-family: 'High-Tech';
+}
+
+#work-bot {
+    background-color: #FF0000;
+    padding: 10px;
+    color: #fff;
+    font-family: 'High-Tech';
+}
+
+/* Chat Box Styles */
+.chat-box {
+    background-color: #0099FF;
+    padding: 10px;
+    color: #fff;
+    font-family: 'High-Tech';
+}
