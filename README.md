@@ -6,7 +6,7 @@
 # need a paper finished for class work bot can finish it in secs .
 
 # got a legal concern lawyer bot has law data base to answer you accurately and never to busy or cost any money 
-# of course lawyer botnis to be use to consult or get a unbiased opinion and even check things your not sure about on the go,
+# of course lawyer bot is to be use to consult or get a unbiased opinion and even check things your not sure about on the go,
 But always seek out human legal advise before making any permanent decisions.
 
 # having trouble coming up with content or want an idea to make a viral tictok video..
