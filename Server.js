@@ -1,4 +1,4 @@
-Import modules
+Import openai
 const express = require('express');
 const bodyParser = require('body-parser');
 const openai = require('openai-api');
