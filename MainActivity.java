@@ -1,16 +1,21 @@
 
-// MainActivity.java
-
-public class MainActivity extends 
-AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
-        // Login/Signup screen View 
-        loginSignupView = getLayoutInflater().inflate(R.layout.login_signup_view, null);
+    public static void main(String[] args) {
+        // Initialize the OpenAI API
+        OpenAIClient openAIClient = new OpenAIClient();
+
+        // Connect to the OpenAI API
+        openAIClient.connect();
+
+        // Create the login/signup view
+        View loginSignupView = getLayoutInflater().inflate(R.layout.login_signup_view, null);
         ViewGroup rootView = findViewById(R.id.root_layout);
         rootView.addView(loginSignupView);
 
@@ -26,7 +31,7 @@ AppCompatActivity {
             // Handle login
         });
 
-        // Bot selection screen
+        // Create the bot selection view
         View botSelectionView = getLayoutInflater().inflate(R.layout.bot_selection_view, null);
         ViewGroup rootView = findViewById(R.id.root_layout);
         rootView.addView(botSelectionView);
@@ -46,7 +51,7 @@ AppCompatActivity {
             // Handle selected bot
         }));
 
-        // Chat screen
+        // Create the chat view
         View chatView = getLayoutInflater().inflate(R.layout.chat_view, null);
         ViewGroup rootView = findViewById(R.id.root_layout);
         rootView.addView(chatView);
