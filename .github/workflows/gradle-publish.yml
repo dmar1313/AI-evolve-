@@ -45,5 +45,5 @@ jobs:
   GRADLE_USER_HOME: /home/runner/.gradle
   GRADLE_BUILD_ACTION_CACHE_RESTORED: true
   
-        USERNAME: ${{ github.actor }}
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        USERNAME: ${{ dmar1313 }}
+        TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
