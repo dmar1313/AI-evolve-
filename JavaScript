@@ -1,0 +1,20 @@
+// Get element by ID
+let myElement = document.getElementById('mElement');
+
+// Create new element newElement = document.createElement('div');
+
+// Set element attributes
+newElement.setAttribute('class', 'container');
+
+// Add text to element
+let textNode = document.createTextNode('Hello World!');
+newElement.appendChild(textNode);
+
+// Append element to parent
+myElement.appendChild(newElement);
+
+HTML: 
+<div id="myElement">
+    <!-- Your new element will be appended here -->
+</div>
+
