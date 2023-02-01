@@ -1,0 +1,49 @@
+name: Android CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+name: Build Android App
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check for dependencies
+      run: |
+        if [ ! -f "${ANDROID_HOME}/platform-tools/adb" ]; then
+          echo "Android command line tools not found, installing..."
+          sdkmanager "platform-tools" "platforms;android-30"
+        fi
+        if [ ! -f "${JAVA_HOME}/bin/java" ]; then
+          echo "JDK not found, installing..."
+          sudo apt-get install openjdk-14-jdk
+        fi
+
+    - name: Build Android App
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
+      with:
+        java-version: '11'
+        distribution: 'temurin'
+        cache: gradle
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+    - name: Build with Gradle
+      run: ./gradlew build
