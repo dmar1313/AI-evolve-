@@ -1,0 +1,42 @@
+name: Build and Deploy Hybrid Android App
+
+on:
+  push:
+    branches: [ master ]
+
+env:
+  JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
+  ANDROID_SDK_ROOT: /usr/local/android-sdk
+  ANDROID_HOME: /usr/local/android-sdk
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+      
+    - name: Set up Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: 11
+        
+    - name: Install Android SDK
+      uses: actions/android-tooling@v1
+      with:
+        components: platform-tools,build-tools,android-28
+        
+    - name: Set up Gradle
+      uses: actions/setup-gradle@v2
+      with:
+        gradle-version: 6.7
+        
+    - name: Build APK
+      run: gradle build
+      
+    - name: Deploy to APK
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ SECRETTOKEN }}
+        publish_dir: app/build/outputs/apk/release
